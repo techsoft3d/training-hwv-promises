@@ -1,0 +1,7 @@
+#viewer {
+  position: relative;
+  width: 1024px;
+  height: 768px;
+  margin-top: 50px;
+  outline: 1px solid black;
+}
