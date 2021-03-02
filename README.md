@@ -6,7 +6,7 @@ If you'd like to review the code after the training has been completed, checkout
 
 `git checkout completed`
 
-## Prerequistes
+## Prerequisites
 
 You will need a basic understanding of JavaScript's [asynchronous behavior](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous), [dot notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors#dot_notation), and an [growth mindset](https://www.mindsetworks.com/science/).
 
