@@ -46,13 +46,13 @@ window.onload = () => {
 // Local procedure to wrap model.loadSubtreeFromScsFile logic
 var loadModelAsSubtree = (modelName) => {
   var model = hwv.model;
-  
+
   // Retrieve root node of model
   var rootNode = model.getAbsoluteRootNode();
-  
+
   // Create a child node of root node
   var id = model.createNode(rootNode, modelName);
-  
+
   // Load provided model to newly created node
   // Remember to return the promise! See myWaitFunction() in demo_promises.js for reference
   return model.loadSubtreeFromScsFile(id, `data/${modelName}.scs`);

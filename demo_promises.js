@@ -40,9 +40,9 @@ var asyncTaskAsAPromiseObject = new Promise(executor);
 debugger;
 
 //let's chain our logic together using .then()
-asyncTaskAsAPromiseObject 
+asyncTaskAsAPromiseObject
   .then(value => { debugger; console.log(`Results: ${value}`)}) // Handle when 'promise' status is *resolved*
-  .then(() => console.log('wow this is great')) // arbitrary unit of work 
+  .then(() => console.log('wow this is great')) // arbitrary unit of work
   .catch(errorMessage => { debugger; console.error(errorMessage);}) //Handle when 'promise' status from above is *rejected*
   .finally(() => console.log('performing post-task clean up...')); // alway run at end, regardless of success or failure from above
 
@@ -67,7 +67,7 @@ var myWaitFunction = (timer) => {
 // Now we can call as a function
 myWaitFunction(1000)
   .then(value => { debugger; console.log(`Results: ${value}`)}) // Handle when 'promise' status is *resolved*
-  .then(() => console.log('wow this is great')) // arbitrary unit of work 
+  .then(() => console.log('wow this is great')) // arbitrary unit of work
   .catch(errorMessage => { debugger; console.error(errorMessage);}) //Handle when 'promise' status from above is *rejected*
   .finally(() => console.log('performing post-task clean up...')); // alway run at end, regardless of success or failure from above
   
